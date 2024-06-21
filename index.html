@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Trivia App</h1>
+        <div id="settings" class="mb-4">
+            <div class="row">
+                <div class="col-md-3">
+                    <label for="category" class="form-label">Categorías</label>
+                    <select id="category" class="form-select">
+                        <!-- Categorías se llenarán dinámicamente -->
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="difficulty" class="form-label">Dificultad</label>
+                    <select id="difficulty" class="form-label">
+                        <option value="easy">Fácil</option>
+                        <option value="medium">Medio</option>
+                        <option value="hard">Difícil</option>
+                    </select>
+                </div>
+                <div class="col-md-3">
+                    <label for="type" class="form-label">Tipo de Respuesta</label>
+                    <select id="type" class="form-select">
+                        <option value="multiple">Múltiple</option>
+                        <option value="boolean">Verdadero/Falso</option>
+                    </select>
+                </div>
+                <div class="col-md-3 d-flex align-items-end">
+                    <button id="generate" class="btn btn-primary w-100">Generar Trivia</button>
+                </div>
+            </div>
+        </div>
+        <div id="quiz" class="d-none">
+            <!-- Preguntas de la trivia se llenarán dinámicamente -->
+        </div>
+        <div id="result" class="d-none text-center">
+            <h2>Puntaje Final: <span id="score">0</span></h2>
+            <button id="new-trivia" class="btn btn-success mt-3">Crear Nueva Trivia</button>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+</html>
